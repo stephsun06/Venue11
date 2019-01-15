@@ -1,0 +1,46 @@
+2019-01-15 14:41:08,345 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-15 14:41:08,398 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-15 14:41:08,406 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-15 14:41:08,480 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-15 14:41:08,545 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-15 14:41:08,551 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-15 14:41:18,293 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service.error does not exist.
+2019-01-15 14:41:18,556 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service does not exist.
+2019-01-15 14:41:18,813 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service.subscriptions does not exist.
+2019-01-15 14:41:53,346 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-15 14:41:53,407 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-15 14:41:53,413 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-15 14:41:53,489 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-15 14:41:53,563 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-15 14:41:53,568 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-15 14:42:15,616 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
+System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-15 14:42:16,439 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
+System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-15 14:42:17,258 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
+System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-15 14:42:18,090 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
+System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-15 14:42:18,904 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
+System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-15 14:42:19,833 [Worker.12] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1.

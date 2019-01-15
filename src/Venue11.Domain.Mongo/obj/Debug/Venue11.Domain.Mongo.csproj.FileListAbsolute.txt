@@ -1,0 +1,17 @@
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\obj\Debug\Venue11.Domain.Mongo.csproj.CoreCompileInputs.cache
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\Venue11.Domain.Mongo.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\Venue11.Domain.Mongo.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\DnsClient.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Bson.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Driver.Core.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Driver.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\System.Buffers.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\DnsClient.xml
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Bson.xml
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Driver.xml
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\bin\Debug\MongoDB.Driver.Core.xml
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\obj\Debug\Venue11.Domain.Mongo.csproj.CopyComplete
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\obj\Debug\Venue11.Domain.Mongo.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\obj\Debug\Venue11.Domain.Mongo.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Mongo\obj\Debug\Venue11.Domain.Mongo.csprojAssemblyReference.cache

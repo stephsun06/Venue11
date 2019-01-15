@@ -1,0 +1,12 @@
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\bin\Debug\Venue11.Domain.dll
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\bin\Debug\Venue11.Domain.pdb
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\obj\Debug\Venue11.Domain.csprojAssemblyReference.cache
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\obj\Debug\Venue11.Domain.csproj.CoreCompileInputs.cache
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\obj\Debug\Venue11.Domain.dll
+C:\Personal\LandWin.Venus11.Project\src\LandWin.Venus.DataGatewayIn.Service\Venue11.Domain\obj\Debug\Venue11.Domain.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\bin\Debug\Venue11.Domain.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\bin\Debug\Venue11.Domain.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\obj\Debug\Venue11.Domain.csprojAssemblyReference.cache
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\obj\Debug\Venue11.Domain.csproj.CoreCompileInputs.cache
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\obj\Debug\Venue11.Domain.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain\obj\Debug\Venue11.Domain.pdb

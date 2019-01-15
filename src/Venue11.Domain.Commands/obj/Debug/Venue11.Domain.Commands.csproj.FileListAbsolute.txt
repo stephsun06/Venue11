@@ -1,0 +1,5 @@
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Commands\bin\Debug\Venue11.Domain.Commands.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Commands\bin\Debug\Venue11.Domain.Commands.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Commands\obj\Debug\Venue11.Domain.Commands.csproj.CoreCompileInputs.cache
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Commands\obj\Debug\Venue11.Domain.Commands.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.Domain.Commands\obj\Debug\Venue11.Domain.Commands.pdb
