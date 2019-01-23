@@ -72,6 +72,9 @@
     <Compile Include="Api\CatalogApiService.cs" />
     <Compile Include="Api\ICatalogApiService.cs" />
     <Compile Include="EndPointConifg.cs" />
+    <Compile Include="ICatalogCollectionProcess.cs" />
+    <Compile Include="CatalogCollectionProcess.cs" />
+    <Compile Include="MessageHandler\MerchantMessageHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,13 +82,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Venue11.Domain.Commands\Venue11.Domain.Commands.csproj">
-      <Project>{64a83a95-8bec-4ca5-abba-7fce6cd0133d}</Project>
-      <Name>Venue11.Domain.Commands</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Venue11.Domain.Mongo\Venue11.Domain.Mongo.csproj">
       <Project>{683f5885-4d0e-4536-8753-b6a2212d209f}</Project>
       <Name>Venue11.Domain.Mongo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Venue11.MerchantCollection.Commands\Venue11.MerchantCollection.Commands.csproj">
+      <Project>{ff661e1b-75d5-4ea9-bd6d-9d75371a4c02}</Project>
+      <Name>Venue11.MerchantCollection.Commands</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

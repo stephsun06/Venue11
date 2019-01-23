@@ -4,7 +4,7 @@ using System;
 using System.Timers;
 using System.Linq;
 using Venue11.Domain.Repositories;
-using Venue11.Domain.Commands.MerchantCollection;
+using Venue11.MerchantCollection.Commands;
 
 namespace Venue11.MerchantLookUpService
 {
@@ -78,7 +78,7 @@ namespace Venue11.MerchantLookUpService
                 {
                     _bus.Send(new GetCatalog()
                     {
-                        MerchantName = item.merchantname,
+                        MerchantName = item.merchant_name,
                         Id = item.id,
                         Url = item.url,
                         RequestedDate = DateTime.Now,

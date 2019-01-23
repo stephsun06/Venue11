@@ -7,11 +7,9 @@ C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\NServiceBus.Host.exe
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\NServiceBus.ObjectBuilder.StructureMap.dll
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\StructureMap.dll
-C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.Commands.dll
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.Dapper.dll
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.dll
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Dapper.dll
-C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.Commands.pdb
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.Dapper.pdb
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.Domain.pdb
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\log4net.xml
@@ -28,3 +26,5 @@ C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\obj\Debug\
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\obj\Debug\Venue11.MerchantLookUpService.csproj.CopyComplete
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\obj\Debug\Venue11.MerchantLookUpService.dll
 C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\obj\Debug\Venue11.MerchantLookUpService.pdb
+C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.MerchantCollection.Commands.dll
+C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\Venue11.MerchantCollection.Commands.pdb

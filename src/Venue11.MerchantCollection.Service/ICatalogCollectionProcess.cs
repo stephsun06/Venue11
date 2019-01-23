@@ -1,5 +1,5 @@
 ﻿
-using Venue11.Domain.Commands.MerchantCollection;
+using Venue11.MerchantCollection.Commands;
 
 namespace Venue11.MerchantCollection.Service
 {

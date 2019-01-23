@@ -2,7 +2,7 @@
 
 using System;
 
-namespace Venue11.Domain.Commands.MerchantCollection
+namespace Venue11.MerchantCollection.Commands
 {
     public class GetCatalog
     {

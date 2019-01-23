@@ -1,32 +1,24 @@
-2019-01-15 14:40:18,823 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
-2019-01-15 14:40:18,885 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
-2019-01-15 14:40:18,891 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
-2019-01-15 14:40:18,946 [1] FATAL NServiceBus.Hosting.GenericHost [(null)] <(null)> - System.ArgumentException: Problem loading message assembly: venue11.domain.commands.merchantcollection ---> System.IO.FileNotFoundException: Could not load file or assembly 'venue11.domain.commands.merchantcollection' or one of its dependencies. The system cannot find the file specified.
-   at System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
-   at System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
-   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
-   at System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
-   at System.Reflection.Assembly.Load(String assemblyString)
-   at NServiceBus.Unicast.Config.ConfigUnicastBus.ConfigureBusProperties(UnicastBusConfig unicastConfig)
-   --- End of inner exception stack trace ---
-   at NServiceBus.Unicast.Config.ConfigUnicastBus.ConfigureBusProperties(UnicastBusConfig unicastConfig)
-   at NServiceBus.Unicast.Config.ConfigUnicastBus.Configure(Configure config)
-   at NServiceBus.ConfigureUnicastBus.UnicastBus(Configure config)
-   at NServiceBus.Hosting.Windows.Roles.Handlers.ServerRoleHandler.ConfigureRole(IConfigureThisEndpoint specifier) in c:\TeamCity\buildAgent\work\nsb.master_8\src\hosting\NServiceBus.Hosting.Windows\Roles\Handlers\ServerRoleHandler.cs:line 20
-   at NServiceBus.Hosting.Roles.RoleManager.ConfigureBusForEndpoint(IConfigureThisEndpoint specifier) in c:\TeamCity\buildAgent\work\nsb.master_8\src\hosting\NServiceBus.Hosting\Roles\RoleManager.cs:line 52
-   at NServiceBus.Hosting.GenericHost.PerformConfiguration() in c:\TeamCity\buildAgent\work\nsb.master_8\src\hosting\NServiceBus.Hosting\GenericHost.cs:line 122
-   at NServiceBus.Hosting.GenericHost.Start() in c:\TeamCity\buildAgent\work\nsb.master_8\src\hosting\NServiceBus.Hosting\GenericHost.cs:line 28
-2019-01-15 14:41:08,156 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
-2019-01-15 14:41:08,213 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
-2019-01-15 14:41:08,221 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
-2019-01-15 14:41:08,274 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
-2019-01-15 14:41:08,335 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:08,341 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:18,910 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantlookupservice does not exist.
-2019-01-15 14:41:19,308 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantlookupservice.subscriptions does not exist.
-2019-01-15 14:41:53,098 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
-2019-01-15 14:41:53,156 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
-2019-01-15 14:41:53,166 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
-2019-01-15 14:41:53,226 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
-2019-01-15 14:41:53,315 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:53,323 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:45:47,673 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:45:47,728 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
+2019-01-21 15:45:47,735 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:45:47,781 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:45:47,839 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:45:47,844 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:50:24,792 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:50:24,854 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
+2019-01-21 15:50:24,862 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:50:24,912 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:50:24,973 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:50:24,979 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:52:06,433 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:52:06,493 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
+2019-01-21 15:52:06,502 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:52:06,553 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:52:06,646 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:52:06,653 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:53:31,350 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:53:31,408 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantLookUpService\bin\Debug\License\License.xml
+2019-01-21 15:53:31,416 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:53:31,468 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:53:31,532 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:53:31,538 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c

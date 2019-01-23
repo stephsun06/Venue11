@@ -68,10 +68,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Venue11.Domain.Commands\Venue11.Domain.Commands.csproj">
-      <Project>{64a83a95-8bec-4ca5-abba-7fce6cd0133d}</Project>
-      <Name>Venue11.Domain.Commands</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Venue11.Domain.Dapper\Venue11.Domain.Dapper.csproj">
       <Project>{25deed33-81b5-44bb-abe1-85edcf30ed7d}</Project>
       <Name>Venue11.Domain.Dapper</Name>
@@ -79,6 +75,10 @@
     <ProjectReference Include="..\Venue11.Domain\Venue11.Domain.csproj">
       <Project>{e8362d93-72ed-4a35-9ab0-222f2cceeabe}</Project>
       <Name>Venue11.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Venue11.MerchantCollection.Commands\Venue11.MerchantCollection.Commands.csproj">
+      <Project>{ff661e1b-75d5-4ea9-bd6d-9d75371a4c02}</Project>
+      <Name>Venue11.MerchantCollection.Commands</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

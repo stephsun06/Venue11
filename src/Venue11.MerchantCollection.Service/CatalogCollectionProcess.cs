@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Venue11.Domain.Commands.MerchantCollection;
 using Venue11.Domain.Mongo.Entities;
 using Venue11.Domain.Mongo.Repositories;
+using Venue11.MerchantCollection.Commands;
 using Venue11.MerchantCollection.Service.Api;
 
 namespace Venue11.MerchantCollection.Service

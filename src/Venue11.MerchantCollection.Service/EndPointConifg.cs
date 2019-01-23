@@ -15,7 +15,7 @@ namespace Venue11.MerchantCollection.Service
             log4net.Config.XmlConfigurator.Configure();
 
             Configure.With()
-                .DefiningCommandsAs(t => t.Namespace != null && (t.Namespace.StartsWith("Venue11.Domain.Commands")))
+                .DefiningCommandsAs(t => t.Namespace != null && (t.Namespace.EndsWith("Commands")))
                 .StructureMapBuilder(container)
                 .XmlSerializer()
                 .DisableSecondLevelRetries()

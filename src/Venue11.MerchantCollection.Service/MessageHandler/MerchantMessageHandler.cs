@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Venue11.Domain.Commands.MerchantCollection;
+using Venue11.MerchantCollection.Commands;
 using Venue11.MerchantCollection.Service.Api;
 
 namespace Venue11.MerchantCollection.Service.MessageHandler

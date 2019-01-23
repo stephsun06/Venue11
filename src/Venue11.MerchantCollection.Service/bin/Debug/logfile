@@ -1,46 +1,630 @@
-2019-01-15 14:41:08,345 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
-2019-01-15 14:41:08,398 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
-2019-01-15 14:41:08,406 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
-2019-01-15 14:41:08,480 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
-2019-01-15 14:41:08,545 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:08,551 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:18,293 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service.error does not exist.
-2019-01-15 14:41:18,556 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service does not exist.
-2019-01-15 14:41:18,813 [1] WARN  NServiceBus.Utils.MsmqUtilities [(null)] <(null)> - Queue mah-lkimd\private$\venue11.merchantcollection.service.subscriptions does not exist.
-2019-01-15 14:41:53,346 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
-2019-01-15 14:41:53,407 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
-2019-01-15 14:41:53,413 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
-2019-01-15 14:41:53,489 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
-2019-01-15 14:41:53,563 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:41:53,568 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
-2019-01-15 14:42:15,616 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
-System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+2019-01-21 15:45:47,779 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:45:47,837 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-21 15:45:47,844 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:45:47,931 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:45:48,009 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:45:48,015 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:46:02,245 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:02,285 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
    at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
    at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
    at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
    at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
-2019-01-15 14:42:16,439 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
-System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+2019-01-21 15:46:03,112 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:03,127 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
    at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
    at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
    at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
    at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
-2019-01-15 14:42:17,258 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
-System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+2019-01-21 15:46:03,942 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:03,966 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
    at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
    at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
    at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
    at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
-2019-01-15 14:42:18,090 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
-System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+2019-01-21 15:46:04,784 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:04,808 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
    at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
    at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
    at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
    at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
-2019-01-15 14:42:18,904 [Worker.12] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1
-System.InvalidOperationException: No handlers could be found for message type: Venue11.Domain.Commands.MerchantCollection.GetCatalog
+2019-01-21 15:46:05,622 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:05,638 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
    at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
    at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
    at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
    at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
-2019-01-15 14:42:19,833 [Worker.12] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\1.
+2019-01-21 15:46:06,543 [Worker.13] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\5.
+2019-01-21 15:46:07,391 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:07,453 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:08,289 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:08,315 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:09,132 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:09,207 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:10,023 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:10,047 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:10,864 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:10,910 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:11,738 [Worker.13] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\7.
+2019-01-21 15:46:12,571 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:12,595 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\9
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:13,415 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:13,457 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\9
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:14,295 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:14,311 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\9
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:46:15,128 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:46:15,145 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\9
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:50:25,081 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:50:25,144 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-21 15:50:25,153 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:50:25,239 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:50:25,324 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:50:25,332 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:50:41,280 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received an empty message - ignoring.
+2019-01-21 15:50:42,138 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - Received an empty message - ignoring.
+2019-01-21 15:52:06,751 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:52:06,811 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-21 15:52:06,823 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:52:06,902 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:52:06,982 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:52:06,990 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:53:31,389 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Checking available license...
+2019-01-21 15:53:31,456 [1] INFO  NServiceBus.Licensing [(null)] <(null)> - Could not find license file: C:\Personal\Project\Venue11\Venue11\src\Venue11.MerchantCollection.Service\bin\Debug\License\License.xml
+2019-01-21 15:53:31,466 [1] WARN  NServiceBus.Licensing [(null)] <(null)> - No valid license file was found. The host will be limited to a throughput of 1msg/s.
+2019-01-21 15:53:31,549 [1] INFO  NServiceBus.Hosting.Roles.RoleManager [(null)] <(null)> - Role NServiceBus.AsA_Server configured
+2019-01-21 15:53:31,637 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.Production, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:53:31,644 [1] INFO  NServiceBus.Host [(null)] <(null)> - Going to activate profile: NServiceBus.PerformanceCounters, NServiceBus.Host, Version=3.2.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c
+2019-01-21 15:53:51,912 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:53:51,937 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:53:52,768 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:53:52,815 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:53:53,639 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:53:53,674 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:53:54,495 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:53:54,526 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:53:55,344 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:53:55,376 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:53:56,246 [Worker.13] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2059.
+2019-01-21 15:54:12,334 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:54:12,388 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:54:13,208 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:54:13,233 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:54:14,052 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:54:14,081 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:54:14,905 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:54:14,919 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:54:15,746 [Worker.13] WARN  NServiceBus.Unicast.UnicastBus [(null)] <(null)> - MerchantMessageHandler failed handling message.
+StructureMap.StructureMapException: StructureMap Exception Code:  202
+No Default Instance defined for PluginFamily Venue11.MerchantCollection.Service.ICatalogCollectionProcess, Venue11.MerchantCollection.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+   at StructureMap.BuildSession.<.ctor>b__0(Type t) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 31
+   at StructureMap.Util.Cache`2.get_Item(KEY key) in c:\code\structuremap\Source\StructureMap\Util\Cache.cs:line 83
+   at StructureMap.BuildSession.CreateInstance(Type pluginType) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 192
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ConstructorInstance.Get[T](String propertyName, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 79
+   at lambda_method(Closure , IArguments )
+   at StructureMap.Construction.BuilderCompiler.FuncCompiler`1.<>c__DisplayClass2.<CreateBuilder>b__0(IArguments args) in c:\code\structuremap\Source\StructureMap\Construction\BuilderCompiler.cs:line 56
+   at StructureMap.Pipeline.ConstructorInstance.Build(Type pluginType, BuildSession session, IInstanceBuilder builder) in c:\code\structuremap\Source\StructureMap\Pipeline\ConstructorInstance.cs:line 237
+   at StructureMap.Pipeline.Instance.createRawObject(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 103
+   at StructureMap.Pipeline.Instance.Build(Type pluginType, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\Instance.cs:line 69
+   at StructureMap.Pipeline.ObjectBuilder.Resolve(Type pluginType, Instance instance, BuildSession session) in c:\code\structuremap\Source\StructureMap\Pipeline\ObjectBuilder.cs:line 27
+   at StructureMap.BuildSession.CreateInstance(Type pluginType, Instance instance) in c:\code\structuremap\Source\StructureMap\BuildSession.cs:line 153
+   at NServiceBus.ObjectBuilder.Common.CommonObjectBuilder.NServiceBus.ObjectBuilder.IBuilder.BuildAndDispatch(Type typeToBuild, Action`1 action)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at NServiceBus.Unicast.UnicastBus.DispatchMessageToHandlersBasedOnType(IBuilder builder, Object toHandle)
+2019-01-21 15:54:15,785 [Worker.13] WARN  NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Failed raising 'transport message received' event for message with ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063
+NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException: Exception of type 'NServiceBus.Unicast.Transport.TransportMessageHandlingFailedException' was thrown.
+   at NServiceBus.Unicast.UnicastBus.HandleTransportMessage(IBuilder childBuilder, TransportMessage msg)
+   at NServiceBus.Unicast.UnicastBus.TransportMessageReceived(Object sender, TransportMessageReceivedEventArgs e)
+   at System.EventHandler`1.Invoke(Object sender, TEventArgs e)
+   at NServiceBus.Unicast.Transport.Transactional.TransactionalTransport.OnTransportMessageReceived(TransportMessage msg)
+2019-01-21 15:54:16,627 [Worker.13] ERROR NServiceBus.Unicast.Transport.Transactional.TransactionalTransport [(null)] <(null)> - Message has failed the maximum number of times allowed, ID=ccadca16-8d6b-40f3-9d3b-2694ee354125\2063.
